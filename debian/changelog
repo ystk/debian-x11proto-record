@@ -1,3 +1,42 @@
+x11proto-record (1.14.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Don't require (fake)root for debian/rules clean.
+  * Bump build-deps on xutils-dev, xmlto and xorg-sgml-doctools per
+    configure.ac.
+  * Update docs installation for new release.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 15 Apr 2012 17:34:36 +0200
+
+x11proto-record (1.14.1-2) unstable; urgency=low
+
+  * Mark x11proto-record-dev Multi-Arch: foreign
+  * Install recordproto.pc to /usr/share/pkgconfig instead of
+    /usr/lib/pkgconfig/recordproto.pc
+
+ -- Steve Langasek <vorlon@debian.org>  Tue, 08 Nov 2011 12:00:20 -0800
+
+x11proto-record (1.14.1-1) unstable; urgency=low
+
+  [ Julien Cristau ]
+  * Rename the build directory to not include DEB_BUILD_GNU_TYPE for no
+    good reason.  Thanks, Colin Watson!
+  * Remove myself from Uploaders
+
+  [ Cyril Brulebois ]
+  * New upstream release.
+  * Bump xutils-dev build-dep for new macros.
+  * Add pkg-config build-dep.
+  * Add xmlto, xorg-sgml-doctools, and w3m build-dep for the specs.
+  * Pass --with-xmlto and --without-fop, we want html and txt only.
+  * Kill *.xml in the doc directory, no point in shipping them.
+  * Ship *.html, *.css, and *.txt from the doc directory.
+  * Switch from --list-missing to --fail-missing for additional safety.
+  * No longer pass --disable-shared, this option is gone.
+  * Add myself to Uploaders.
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 06 Nov 2010 01:42:41 +0100
+
 x11proto-record (1.14-2) unstable; urgency=low
 
   * Upload to unstable.
